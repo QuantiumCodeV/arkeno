@@ -1,28 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arkeno | Solana</title>
 
-    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+      rel="shortcut icon"
+      href="./assets/img/logo.svg"
+      type="image/x-icon"
+    />
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
 
-<body class="bg-black w-full">
-    <header class="flex px-2.5 mt-12 w-full bg-red">
-        <div class="flex justify-beetween"></div>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="bg-black w-full flex flex-col items-center">
+    <div
+      class="absolute w-full h-[626px] min-h-[626px] overflow-hidden -z-0 max-w-[1920px]"
+    >
+      <img
+        src="./assets/img/main-purple-light-blur.png"
+        class="absolute w-[2200px] min-w-[2200px] bottom-0 transform-[translateY(65%)] left-[50%] -z-10 translate-x-[-50%]"
+        alt=""
+      />
+      <img
+        src="./assets/img/main-white-light-blur.png"
+        class="absolute w-[2200px] min-w-[2200px] bottom-0 transform-[translateY(62%)] left-[50%] -z-20 translate-x-[-50%] mix-blend-plus-lighter"
+        alt=""
+      />
+      <img
+        src="./assets/img/main-purple.png"
+        class="absolute w-[2200px] min-w-[2200px] bottom-0 transform-[translateY(75%)] left-[50%] -z-30 translate-x-[-50%]"
+        alt=""
+      />
+      <img
+        src="./assets/img/main-white-blur.png"
+        class="absolute w-[2200px] min-w-[2200px] bottom-0 transform-[translateY(60%)] left-[50%] -z-40 translate-x-[-50%]"
+        alt=""
+      />
+      <img
+        src="./assets/img/main-purple-blur.png"
+        class="absolute w-[2500px] min-w-[2500px] bottom-0 transform-[translateY(45%)] left-[50%] z-[-70] translate-x-[-50%]"
+        alt=""
+      />
+      <img
+        src="./assets/img/blocks-right.png"
+        class="absolute bottom-[-220px] right-[-200px] z-[-60] [mask-image:linear-gradient(to_right,black,transparent)]"
+        alt=""
+      />
+      <img
+        src="./assets/img/blocks-left.png"
+        class="absolute bottom-[-220px] left-[-200px] z-[-60] [mask-image:linear-gradient(to_left,black,transparent)]"
+        alt=""
+      />
+    </div>
+    <header
+      class="flex justify-between px-2.5 mt-12 w-full bg-red max-w-[1440px]"
+    >
+      <div class="flex items-center gap-3">
+        <img src="./assets/img/logo.svg" alt="" />
+        <span class="text-white text-xl font-medium tracking-[-0.04em]"
+          >Arkeno</span
+        >
+      </div>
+      <ul
+        class="flex gap-6 bg-[#0D0D0D] rounded-lg border border-white/4 py-3 px-4"
+      >
+        <li>
+          <a
+            href="#video"
+            class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out"
+            >Video</a
+          >
+        </li>
+        <li>
+          <a
+            href="#dashboard"
+            class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out"
+            >Dashboard</a
+          >
+        </li>
+        <li>
+          <a
+            href="#getting-started"
+            class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out"
+            >Getting Started</a
+          >
+        </li>
+        <li>
+          <a
+            href="#reviews"
+            class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out"
+            >Reviews</a
+          >
+        </li>
+        <li>
+          <a
+            href="#faq"
+            class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out"
+            >FAQ</a
+          >
+        </li>
+        <li>
+          <a
+            href="#roadmap"
+            class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out"
+            >Roadmap</a
+          >
+        </li>
+      </ul>
+      <button
+        class="flex py-2.5 px-4 gap-1 items-center bg-gradient-to-b from-[#716CFF] to-[#5C0BCD] rounded-[6px] customBorder"
+      >
+        <span class="text-white font-Roboto-flex text-xl tracking-[-0.04em]"
+          >Join us on X
+        </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="25"
+          height="24"
+          viewBox="0 0 25 24"
+          fill="none"
+        >
+          <path
+            d="M9.66488 17.6505C9.42513 17.8743 9.23958 18.0241 9.04996 18.1336C8.12175 18.6695 6.97816 18.6695 6.04996 18.1336C5.70791 17.9361 5.37912 17.6073 4.72153 16.9498C4.06394 16.2922 3.73514 15.9634 3.53767 15.6213C3.00177 14.6931 3.00177 13.5495 3.53767 12.6213C3.73514 12.2793 4.06394 11.9505 4.72153 11.2929L7.54996 8.46448C8.20755 7.80689 8.53634 7.47809 8.87838 7.28062C9.80659 6.74472 10.9502 6.74472 11.8784 7.28061C12.2204 7.47809 12.5492 7.80689 13.2068 8.46448C13.8644 9.12207 14.1932 9.45086 14.3907 9.7929C14.9266 10.7211 14.9266 11.8647 14.3907 12.7929C14.2812 12.9825 14.1314 13.1681 13.9075 13.4078M11.0919 10.5922C10.868 10.8319 10.7182 11.0175 10.6087 11.2071C10.0728 12.1353 10.0728 13.2789 10.6087 14.2071C10.8062 14.5492 11.135 14.878 11.7926 15.5355C12.4502 16.1931 12.779 16.5219 13.121 16.7194C14.0492 17.2553 15.1928 17.2553 16.121 16.7194C16.4631 16.5219 16.7919 16.1931 17.4495 15.5355L20.2779 12.7071C20.9355 12.0495 21.2643 11.7207 21.4617 11.3787C21.9976 10.4505 21.9976 9.30689 21.4617 8.37869C21.2643 8.03665 20.9355 7.70785 20.2779 7.05026C19.6203 6.39267 19.2915 6.06388 18.9495 5.8664C18.0212 5.3305 16.8777 5.3305 15.9495 5.8664C15.7598 5.97588 15.5743 6.12571 15.3345 6.34955"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
     </header>
-
-</body>
-
+  </body>
 </html>
