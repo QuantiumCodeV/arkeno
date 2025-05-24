@@ -1,142 +1,896 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arkeno | Solana</title>
 
-    <link
-      rel="shortcut icon"
-      href="./assets/img/logo.svg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet" />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
+</head>
 
-  <body class="bg-black w-full flex flex-col items-center">
-    <div
-      class="absolute w-full h-[626px] min-h-[626px] overflow-hidden -z-0 max-w-[1920px]"
-    >
-      <img
-        src="./assets/img/main-purple-light-blur.png"
-        class="absolute w-[2200px] min-w-[2200px] bottom-0 transform-[translateY(65%)] left-[50%] -z-10 translate-x-[-50%]"
-        alt=""
-      />
-      <img
-        src="./assets/img/main-white-light-blur.png"
-        class="absolute w-[2200px] min-w-[2200px] bottom-0 transform-[translateY(62%)] left-[50%] -z-20 translate-x-[-50%] mix-blend-plus-lighter"
-        alt=""
-      />
-      <img
-        src="./assets/img/main-purple.png"
-        class="absolute w-[2200px] min-w-[2200px] bottom-0 transform-[translateY(75%)] left-[50%] -z-30 translate-x-[-50%]"
-        alt=""
-      />
-      <img
-        src="./assets/img/main-white-blur.png"
-        class="absolute w-[2200px] min-w-[2200px] bottom-0 transform-[translateY(60%)] left-[50%] -z-40 translate-x-[-50%]"
-        alt=""
-      />
-      <img
-        src="./assets/img/main-purple-blur.png"
-        class="absolute w-[2500px] min-w-[2500px] bottom-0 transform-[translateY(45%)] left-[50%] z-[-70] translate-x-[-50%]"
-        alt=""
-      />
-      <img
-        src="./assets/img/blocks-right.png"
-        class="absolute bottom-[-220px] right-[-200px] z-[-60] [mask-image:linear-gradient(to_right,black,transparent)]"
-        alt=""
-      />
-      <img
-        src="./assets/img/blocks-left.png"
-        class="absolute bottom-[-220px] left-[-200px] z-[-60] [mask-image:linear-gradient(to_left,black,transparent)]"
-        alt=""
-      />
-    </div>
-    <header
-      class="flex justify-between px-2.5 mt-12 w-full bg-red max-w-[1440px]"
-    >
-      <div class="flex items-center gap-3">
-        <img src="./assets/img/logo.svg" alt="" />
-        <span class="text-white text-xl font-medium tracking-[-0.04em]"
-          >Arkeno</span
-        >
-      </div>
-      <ul
-        class="flex gap-6 bg-[#0D0D0D] rounded-lg border border-white/4 py-3 px-4"
-      >
-        <li>
-          <a
-            href="#video"
-            class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out"
-            >Video</a
-          >
-        </li>
-        <li>
-          <a
-            href="#dashboard"
-            class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out"
-            >Dashboard</a
-          >
-        </li>
-        <li>
-          <a
-            href="#getting-started"
-            class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out"
-            >Getting Started</a
-          >
-        </li>
-        <li>
-          <a
-            href="#reviews"
-            class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out"
-            >Reviews</a
-          >
-        </li>
-        <li>
-          <a
-            href="#faq"
-            class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out"
-            >FAQ</a
-          >
-        </li>
-        <li>
-          <a
-            href="#roadmap"
-            class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out"
-            >Roadmap</a
-          >
-        </li>
-      </ul>
-      <button
-        class="flex py-2.5 px-4 gap-1 items-center bg-gradient-to-b from-[#716CFF] to-[#5C0BCD] rounded-[6px] customBorder"
-      >
-        <span class="text-white font-Roboto-flex text-xl tracking-[-0.04em]"
-          >Join us on X
-        </span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="25"
-          height="24"
-          viewBox="0 0 25 24"
-          fill="none"
-        >
-          <path
-            d="M9.66488 17.6505C9.42513 17.8743 9.23958 18.0241 9.04996 18.1336C8.12175 18.6695 6.97816 18.6695 6.04996 18.1336C5.70791 17.9361 5.37912 17.6073 4.72153 16.9498C4.06394 16.2922 3.73514 15.9634 3.53767 15.6213C3.00177 14.6931 3.00177 13.5495 3.53767 12.6213C3.73514 12.2793 4.06394 11.9505 4.72153 11.2929L7.54996 8.46448C8.20755 7.80689 8.53634 7.47809 8.87838 7.28062C9.80659 6.74472 10.9502 6.74472 11.8784 7.28061C12.2204 7.47809 12.5492 7.80689 13.2068 8.46448C13.8644 9.12207 14.1932 9.45086 14.3907 9.7929C14.9266 10.7211 14.9266 11.8647 14.3907 12.7929C14.2812 12.9825 14.1314 13.1681 13.9075 13.4078M11.0919 10.5922C10.868 10.8319 10.7182 11.0175 10.6087 11.2071C10.0728 12.1353 10.0728 13.2789 10.6087 14.2071C10.8062 14.5492 11.135 14.878 11.7926 15.5355C12.4502 16.1931 12.779 16.5219 13.121 16.7194C14.0492 17.2553 15.1928 17.2553 16.121 16.7194C16.4631 16.5219 16.7919 16.1931 17.4495 15.5355L20.2779 12.7071C20.9355 12.0495 21.2643 11.7207 21.4617 11.3787C21.9976 10.4505 21.9976 9.30689 21.4617 8.37869C21.2643 8.03665 20.9355 7.70785 20.2779 7.05026C19.6203 6.39267 19.2915 6.06388 18.9495 5.8664C18.0212 5.3305 16.8777 5.3305 15.9495 5.8664C15.7598 5.97588 15.5743 6.12571 15.3345 6.34955"
-            stroke="white"
-            stroke-width="1.5"
-            stroke-linecap="round"
-          />
+<body class="bg-black w-full flex flex-col items-center p-3 lg:p-0">
+    <div class="loader">
+        <svg xmlns="http://www.w3.org/2000/svg" class="loader_image" width="46" height="36" viewBox="0 0 46 36"
+            fill="none">
+            <path
+                d="M38.1425 21.3579L28.9242 19.7566C28.4166 19.669 28.0378 20.1948 28.2796 20.6409L28.9081 21.796C29.1257 22.2023 28.8356 22.6883 28.3682 22.6883H17.6593C17.1919 22.6883 16.9018 22.1943 17.1194 21.796L18.7632 18.8086C18.9646 18.4422 18.7471 17.9961 18.3281 17.9244L10.7214 16.602C10.4635 16.5542 10.2057 16.6816 10.0768 16.9127L0.0768915 35.1078C-0.14873 35.5141 0.149412 36 0.616771 36H8.97283C9.19845 36 9.40796 35.8805 9.51271 35.6813L12.6875 29.8898C12.7923 29.6907 13.0018 29.5712 13.2274 29.5712H32.7759C33.0015 29.5712 33.211 29.6907 33.3158 29.8898L36.4906 35.6813C36.5954 35.8805 36.8049 36 37.0305 36H45.3865C45.8539 36 46.144 35.5061 45.9264 35.1078L38.5615 21.6686C38.4729 21.5092 38.3117 21.3897 38.1264 21.3579H38.1425Z"
+                fill="white" />
+            <path
+                d="M37.1927 18.689L27.9744 17.0878C27.7891 17.0559 27.6279 16.9444 27.5393 16.7771L23.5748 9.5357C23.3411 9.11349 22.7287 9.11349 22.495 9.5357L19.3847 15.1759C19.2558 15.4069 18.9979 15.5264 18.7401 15.4866L11.1334 14.1641C10.7224 14.0924 10.5049 13.6463 10.6983 13.2799L17.8215 0.318652C17.9262 0.12746 18.1357 0 18.3613 0H27.7005C27.9261 0 28.1356 0.119494 28.2403 0.318652L37.8212 17.7968C38.0629 18.2429 37.6842 18.7687 37.1766 18.6811L37.1927 18.689Z"
+                fill="white" />
         </svg>
-      </button>
+    </div>
+    <div class="absolute w-full h-[626px] min-h-[626px] overflow-hidden -z-10 max-w-[1920px]">
+        <img src="./assets/img/main-purple-light-blur.png"
+            class="absolute w-[2200px] min-w-[2200px] bottom-0 transform-[translateY(65%)] left-[50%] -z-10 translate-x-[-50%]"
+            alt="" />
+        <img src="./assets/img/main-white-light-blur.png"
+            class="absolute w-[2200px] min-w-[2200px] bottom-0 transform-[translateY(62%)] left-[50%] -z-20 translate-x-[-50%] mix-blend-plus-lighter"
+            alt="" />
+        <img src="./assets/img/main-purple.png"
+            class="absolute w-[2200px] min-w-[2200px] bottom-0 transform-[translateY(75%)] left-[50%] -z-30 translate-x-[-50%]"
+            alt="" />
+        <img src="./assets/img/main-white-blur.png"
+            class="absolute w-[2200px] min-w-[2200px] bottom-0 transform-[translateY(60%)] left-[50%] -z-40 translate-x-[-50%]"
+            alt="" />
+        <img src="./assets/img/main-purple-blur.png"
+            class="absolute w-[2500px] min-w-[2500px] bottom-0 transform-[translateY(45%)] left-[50%] z-[-70] translate-x-[-50%]"
+            alt="" />
+        <img src="./assets/img/blocks-right.png"
+            class="absolute opacity-20 bottom-[-220px] right-[-200px] z-[-60] [mask-image:linear-gradient(to_right_top,black_0%,transparent_90%,#635CF4_100%)]"
+            alt="" />
+        <img src="./assets/img/blocks-left.png"
+            class="absolute opacity-20 bottom-[-220px] left-[-200px] z-[-60] [mask-image:linear-gradient(to_left_top,black_0%,transparent_90%,#635CF4_100%)]"
+            alt="" />
+    </div>
+    <header class="flex justify-between px-2.5 mt-12 w-full bg-red max-w-[1440px]">
+        <div class="flex items-center gap-3">
+            <img src="./assets/img/logo.svg" alt="" />
+            <span class="text-white text-xl font-medium tracking-[-0.04em]">Arkeno</span>
+        </div>
+        <ul class=" gap-6 bg-[#0D0D0D] hidden lg:flex rounded-lg border border-white/4 py-3 px-4">
+            <li>
+                <a href="#video"
+                    class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">Video</a>
+            </li>
+            <li>
+                <a href="#dashboard"
+                    class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">Dashboard</a>
+            </li>
+            <li>
+                <a href="#getting-started"
+                    class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">Getting
+                    Started</a>
+            </li>
+            <li>
+                <a href="#reviews"
+                    class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">Reviews</a>
+            </li>
+            <li>
+                <a href="#faq"
+                    class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">FAQ</a>
+            </li>
+            <li>
+                <a href="#roadmap"
+                    class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">Roadmap</a>
+            </li>
+        </ul>
+        <button onclick="window.location.href=config.url"
+            class="cursor-pointer hidden lg:flex hover:opacity-80 transition-opacity duration-500 ease-in-out  py-2.5 px-4 gap-1 items-center bg-gradient-to-b from-[#716CFF] to-[#5C0BCD] rounded-[6px] customBorder">
+            <span class="text-white font-Roboto-flex text-xl tracking-[-0.04em]">Join us on X
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                <path
+                    d="M9.66488 17.6505C9.42513 17.8743 9.23958 18.0241 9.04996 18.1336C8.12175 18.6695 6.97816 18.6695 6.04996 18.1336C5.70791 17.9361 5.37912 17.6073 4.72153 16.9498C4.06394 16.2922 3.73514 15.9634 3.53767 15.6213C3.00177 14.6931 3.00177 13.5495 3.53767 12.6213C3.73514 12.2793 4.06394 11.9505 4.72153 11.2929L7.54996 8.46448C8.20755 7.80689 8.53634 7.47809 8.87838 7.28062C9.80659 6.74472 10.9502 6.74472 11.8784 7.28061C12.2204 7.47809 12.5492 7.80689 13.2068 8.46448C13.8644 9.12207 14.1932 9.45086 14.3907 9.7929C14.9266 10.7211 14.9266 11.8647 14.3907 12.7929C14.2812 12.9825 14.1314 13.1681 13.9075 13.4078M11.0919 10.5922C10.868 10.8319 10.7182 11.0175 10.6087 11.2071C10.0728 12.1353 10.0728 13.2789 10.6087 14.2071C10.8062 14.5492 11.135 14.878 11.7926 15.5355C12.4502 16.1931 12.779 16.5219 13.121 16.7194C14.0492 17.2553 15.1928 17.2553 16.121 16.7194C16.4631 16.5219 16.7919 16.1931 17.4495 15.5355L20.2779 12.7071C20.9355 12.0495 21.2643 11.7207 21.4617 11.3787C21.9976 10.4505 21.9976 9.30689 21.4617 8.37869C21.2643 8.03665 20.9355 7.70785 20.2779 7.05026C19.6203 6.39267 19.2915 6.06388 18.9495 5.8664C18.0212 5.3305 16.8777 5.3305 15.9495 5.8664C15.7598 5.97588 15.5743 6.12571 15.3345 6.34955"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+        </button>
+        <button id="mobileMenu" class="flex gap-4 p-1 border border-white/40 rounded-[6px] lg:hidden"
+            >
+            <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6H20M4 12H20M4 18H20" stroke="rgba(255, 255, 255, 0.32)" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div id="mobileMenuContent"
+            class="flex flex-col gap-6 p-6 justify-start bg-black fixed right-[-100%] top-0 overflow-y-hidden transition-all duration-300 ease-in-out z-[111] w-[300px] h-full">
+            <div class="flex items-center gap-3">
+                <img src="./assets/img/logo.svg" alt="" />
+            </div>
+            <div id="mobileMenuClose" class="absolute top-7 right-7">
+                <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Menu / Close_MD">
+                        <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18"
+                            stroke="rgba(255, 255, 255, 0.32)" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </g>
+                </svg>
+            </div>
+            <ul id="headerListMobile" class="flex flex-col gap-2">
+                <li>
+                    <a href="#video"
+                        class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">Video</a>
+                </li>
+                <li>
+                    <a href="#dashboard"
+                        class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#getting-started"
+                        class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">Getting
+                        Started</a>
+                </li>
+                <li>
+                    <a href="#reviews"
+                        class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">Reviews</a>
+                </li>
+                <li>
+                    <a href="#faq"
+                        class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">FAQ</a>
+                </li>
+                <li>
+                    <a href="#roadmap"
+                        class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">Roadmap</a>
+                </li>
+            </ul>
+            <button onclick="window.location.href=config.url"
+                class="cursor-pointer w-max lg:w-auto flex hover:opacity-80 transition-opacity duration-500 ease-in-out  py-2.5 px-4 gap-1 items-center bg-gradient-to-b from-[#716CFF] to-[#5C0BCD] rounded-[6px] customBorder">
+                <span class="text-white font-Roboto-flex text-xl tracking-[-0.04em]">Join us on X
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path
+                        d="M9.66488 17.6505C9.42513 17.8743 9.23958 18.0241 9.04996 18.1336C8.12175 18.6695 6.97816 18.6695 6.04996 18.1336C5.70791 17.9361 5.37912 17.6073 4.72153 16.9498C4.06394 16.2922 3.73514 15.9634 3.53767 15.6213C3.00177 14.6931 3.00177 13.5495 3.53767 12.6213C3.73514 12.2793 4.06394 11.9505 4.72153 11.2929L7.54996 8.46448C8.20755 7.80689 8.53634 7.47809 8.87838 7.28062C9.80659 6.74472 10.9502 6.74472 11.8784 7.28061C12.2204 7.47809 12.5492 7.80689 13.2068 8.46448C13.8644 9.12207 14.1932 9.45086 14.3907 9.7929C14.9266 10.7211 14.9266 11.8647 14.3907 12.7929C14.2812 12.9825 14.1314 13.1681 13.9075 13.4078M11.0919 10.5922C10.868 10.8319 10.7182 11.0175 10.6087 11.2071C10.0728 12.1353 10.0728 13.2789 10.6087 14.2071C10.8062 14.5492 11.135 14.878 11.7926 15.5355C12.4502 16.1931 12.779 16.5219 13.121 16.7194C14.0492 17.2553 15.1928 17.2553 16.121 16.7194C16.4631 16.5219 16.7919 16.1931 17.4495 15.5355L20.2779 12.7071C20.9355 12.0495 21.2643 11.7207 21.4617 11.3787C21.9976 10.4505 21.9976 9.30689 21.4617 8.37869C21.2643 8.03665 20.9355 7.70785 20.2779 7.05026C19.6203 6.39267 19.2915 6.06388 18.9495 5.8664C18.0212 5.3305 16.8777 5.3305 15.9495 5.8664C15.7598 5.97588 15.5743 6.12571 15.3345 6.34955"
+                        stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
     </header>
-  </body>
+    <section class="flex flex-col mt-[63px] items-center gap-16">
+        <div class="flex flex-col gap-4 max-w-[835px] items-center ">
+            <h1 class="text-white  text-center font-semibold text-4xl sm:text-[56px] leading-[120%] tracking-[-0.04em]">
+                Arkeno is an infrastructure for transaction efficiency
+            </h1>
+            <span class="text-white/50 text-center text-lg leading-[150%] tracking-[-0.04em] max-w-[612px]">
+                It serves as an internal routing and acceleration core, enabling faster, cheaper,
+                and more reliable transactions—all without manual configuration.
+            </span>
+        </div>
+        <div id="video" class="flex max-w-[720px]  z-10">
+            <video class="border relative    rounded-3xl w-full customBorderVideo" autoplay muted loop controls
+                src="./assets/video/video.mp4"></video>
+        </div>
+    </section>
+    <section id="dashboard" class="flex flex-col mt-18 items-center w-full max-w-[1440px] gap-[52px]">
+        <div class="flex py-3 px-6 rounded-[100px] bg-primary-color/12">
+            <span class="text-primary-color font-medium text-[32px] tracking-[-0.04em] ">
+                Dashboard
+            </span>
+        </div>
+        <div class="flex gap-6 flex-wrap w-full justify-center">
+            <div
+                class="flex flex-col z-0 p-4.5 rounded-xl gap-5 bg-[#040404] border border-white/12 w-full max-w-[464px]">
+                <div
+                    class="flex relative bg-black rounded-lg w-full  h-full  max-h-[368px] min-h-[368px] min-w-auto sm:max-w-[428px] sm:min-w-[428px] overflow-hidden">
+
+                    <img src="./assets/img/dashboard-block-1.png"
+                        class="absolute left-[50%] translate-x-[-50%] top-[36px]" alt="">
+
+                </div>
+                <div class="flex flex-col gap-2.5">
+                    <div class="flex gap-[9px] items-center">
+                        <div
+                            class="flex  w-[32px] h-[32px] items-center justify-center  bg-[#040404] rounded-[6px] customBorderDashboardNumber">
+                            <span class="text-white text-lg font-medium tracking-[-0.04em]"> 1</span>
+                        </div>
+                        <span class="text-white font-medium text-xl  tracking-[-0.04em]">
+                            Core Status
+                        </span>
+                    </div>
+                    <span class="text-white leading-[150%] font-light tracking-[-0.04em] ">
+                        — Arkemode: ON / OFF <br>
+                        — Core state: Active / Syncing / Offline <br>
+                        — Connected wallets count <br>
+                        — System health indicator <br>
+                    </span>
+                </div>
+            </div>
+            <div
+                class="flex flex-col z-0 p-4.5 rounded-xl gap-5 bg-[#040404] border border-white/12 w-full max-w-[464px]">
+                <div
+                    class="flex relative bg-black rounded-lg w-full  h-full  max-h-[368px] min-h-[368px] min-w-auto sm:max-w-[428px] sm:min-w-[428px] overflow-hidden">
+
+                    <img src="./assets/img/dashboard-block-2.png"
+                        class="absolute left-[50%] min-w-[880px] translate-x-[-50%] top-[40px]" alt="">
+
+                </div>
+                <div class="flex flex-col gap-2.5">
+                    <div class="flex gap-[9px] items-center">
+                        <div
+                            class="flex  w-[32px] h-[32px] items-center justify-center  bg-[#040404] rounded-[6px] customBorderDashboardNumber">
+                            <span class="text-white text-lg font-medium tracking-[-0.04em]"> 2</span>
+                        </div>
+                        <span class="text-white font-medium text-xl  tracking-[-0.04em]">
+                            Transaction Log
+                        </span>
+                    </div>
+                    <span class="text-white leading-[150%] font-light tracking-[-0.04em] ">
+                        — Live list of outgoing transactions <br>
+                        — Execution result and delay time (ms) <br>
+                        — Route: standard or through Arkeno <br>
+                        — Stable data
+                    </span>
+                </div>
+            </div>
+            <div
+                class="flex flex-col z-0 p-4.5 rounded-xl gap-5 bg-[#040404] border border-white/12 w-full max-w-[464px]">
+                <div
+                    class="flex relative bg-black rounded-lg w-full  h-full  max-h-[368px] min-h-[368px] min-w-auto sm:max-w-[428px] sm:min-w-[428px] overflow-hidden">
+
+                    <img src="./assets/img/dashboard-block-3.png"
+                        class="absolute left-[50%] translate-x-[-50%] top-[60%] translate-y-[-60%]" alt="">
+                    <img src="./assets/img/dashboard-block-3-light.png"
+                        class="absolute left-[50%] translate-x-[-50%] min-w-[820px] bottom-[-400px]" alt="">
+                </div>
+                <div class="flex flex-col gap-2.5">
+                    <div class="flex gap-[9px] items-center">
+                        <div
+                            class="flex  w-[32px] h-[32px] items-center justify-center  bg-[#040404] rounded-[6px] customBorderDashboardNumber">
+                            <span class="text-white text-lg font-medium tracking-[-0.04em]"> 3</span>
+                        </div>
+                        <span class="text-white font-medium text-xl  tracking-[-0.04em]">
+                            Performance Metrics
+                        </span>
+                    </div>
+                    <span class="text-white leading-[150%] font-light tracking-[-0.04em] ">
+                        — Time saved (seconds / %) <br>
+                        — Fee savings (in SOL) <br>
+                        — Before/after comparisons <br>
+                        — 24h / 7d / 30d graphs
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="getting-started" class="flex flex-col mt-18 items-center w-full max-w-[1440px] gap-[52px]">
+        <div class="flex py-3 px-6 rounded-[100px] bg-primary-color/12">
+            <span class="text-primary-color font-medium text-[32px] tracking-[-0.04em] ">
+                Getting Started
+            </span>
+        </div>
+        <div class="flex gap-6 flex-wrap w-full justify-center">
+            <div
+                class="flex flex-col z-0 p-4.5 rounded-xl gap-5 bg-[#040404] border border-white/12 w-full max-w-[464px]">
+                <div
+                    class="flex relative bg-black rounded-lg w-full  h-full  max-h-[368px] min-h-[368px] min-w-auto sm:max-w-[428px] sm:min-w-[428px] overflow-hidden">
+
+                    <img src="./assets/img/getting-started-1-bg.png"
+                        class="absolute left-[-18px] min-w-[720px] top-[36px]" alt="">
+                    <img src="./assets/img/dashboard-block-3-light.png"
+                        class="absolute left-[50%] translate-x-[-50%] min-w-[820px] bottom-[-370px]" alt="">
+                    <button onclick="window.location.href=config.url"
+                        class="flex cursor-pointer hover:opacity-80 transition-opacity duration-500 ease-in-out  border border-[#8B56DF] absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]  items-center gap-1 rounded-[6px] py-2.5 px-4 bg-gradient-to-b from-[#716CFF] to-[#5C0BCD]">
+                        <span class="font-Roboto-flex text-xl text-white tracking-[-0.04em]">Connect Wallet</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.16488 17.6505C8.92513 17.8743 8.73958 18.0241 8.54996 18.1336C7.62175 18.6695 6.47816 18.6695 5.54996 18.1336C5.20791 17.9361 4.87912 17.6073 4.22153 16.9498C3.56394 16.2922 3.23514 15.9634 3.03767 15.6213C2.50177 14.6931 2.50177 13.5495 3.03767 12.6213C3.23514 12.2793 3.56394 11.9505 4.22153 11.2929L7.04996 8.46448C7.70755 7.80689 8.03634 7.47809 8.37838 7.28062C9.30659 6.74472 10.4502 6.74472 11.3784 7.28061C11.7204 7.47809 12.0492 7.80689 12.7068 8.46448C13.3644 9.12207 13.6932 9.45086 13.8907 9.7929C14.4266 10.7211 14.4266 11.8647 13.8907 12.7929C13.7812 12.9825 13.6314 13.1681 13.4075 13.4078M10.5919 10.5922C10.368 10.8319 10.2182 11.0175 10.1087 11.2071C9.57284 12.1353 9.57284 13.2789 10.1087 14.2071C10.3062 14.5492 10.635 14.878 11.2926 15.5355C11.9502 16.1931 12.279 16.5219 12.621 16.7194C13.5492 17.2553 14.6928 17.2553 15.621 16.7194C15.9631 16.5219 16.2919 16.1931 16.9495 15.5355L19.7779 12.7071C20.4355 12.0495 20.7643 11.7207 20.9617 11.3787C21.4976 10.4505 21.4976 9.30689 20.9617 8.37869C20.7643 8.03665 20.4355 7.70785 19.7779 7.05026C19.1203 6.39267 18.7915 6.06388 18.4495 5.8664C17.5212 5.3305 16.3777 5.3305 15.4495 5.8664C15.2598 5.97588 15.0743 6.12571 14.8345 6.34955"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+
+                    </button>
+
+                </div>
+                <div class="flex flex-col gap-2.5">
+                    <div class="flex gap-[9px] items-center">
+                        <div
+                            class="flex  w-[32px] h-[32px] items-center justify-center  bg-[#040404] rounded-[6px] customBorderDashboardNumber">
+                            <span class="text-white text-lg font-medium tracking-[-0.04em]"> 1</span>
+                        </div>
+                        <span class="text-white font-medium text-xl  tracking-[-0.04em]">
+                            Visit the Arkeno Website
+                        </span>
+                    </div>
+                    <span class="text-white/30 leading-[150%] font-light tracking-[-0.04em] ">
+                        User lands on arkenocore.com and is presented with a simple interface to connect a wallet.
+                    </span>
+                </div>
+            </div>
+            <div
+                class="flex flex-col z-0 p-4.5 rounded-xl gap-5 bg-[#040404] border border-white/12 w-full max-w-[464px]">
+                <div
+                    class="flex relative bg-black rounded-lg w-full  h-full  max-h-[368px] min-h-[368px] min-w-auto sm:max-w-[428px] sm:min-w-[428px] overflow-hidden">
+
+                    <img src="./assets/img/getting-started-2-bg.png"
+                        class=" absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] min-w-[279px]"
+                        alt="">
+
+                </div>
+                <div class="flex flex-col gap-2.5">
+                    <div class="flex gap-[9px] items-center">
+                        <div
+                            class="flex  w-[32px] h-[32px] items-center justify-center  bg-[#040404] rounded-[6px] customBorderDashboardNumber">
+                            <span class="text-white text-lg font-medium tracking-[-0.04em]"> 2</span>
+                        </div>
+                        <span class="text-white font-medium text-xl  tracking-[-0.04em]">
+                            Connect Wallet(s)
+                        </span>
+                    </div>
+                    <span class="text-white/30 leading-[150%] font-light tracking-[-0.04em] ">
+                        Users can connect via Phantom, Backpack, or manually with a private key. Multi-wallet
+                        connections are supported.
+                    </span>
+                </div>
+            </div>
+            <div
+                class="flex flex-col z-0 p-4.5 rounded-xl gap-5 bg-[#040404] border border-white/12 w-full max-w-[464px]">
+                <div
+                    class="flex relative bg-black rounded-lg w-full  h-full  max-h-[368px] min-h-[368px] min-w-auto sm:max-w-[428px] sm:min-w-[428px] overflow-hidden">
+
+                    <img src="./assets/img/getting-started-3.png"
+                        class="absolute left-[50%] translate-x-[-50%] top-[36px]" alt="">
+                </div>
+                <div class="flex flex-col gap-2.5">
+                    <div class="flex gap-[9px] items-center">
+                        <div
+                            class="flex  w-[32px] h-[32px] items-center justify-center  bg-[#040404] rounded-[6px] customBorderDashboardNumber">
+                            <span class="text-white text-lg font-medium tracking-[-0.04em]"> 3</span>
+                        </div>
+                        <span class="text-white font-medium text-xl  tracking-[-0.04em]">
+                            Access the Dashboard
+                        </span>
+                    </div>
+                    <span class="text-white/30 leading-[150%] font-light tracking-[-0.04em] ">
+                        Upon connection, the user is taken to the main dashboard showing: Wallets, Connection status,
+                        spec. activation toggle
+                    </span>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col z-0 p-4.5 rounded-xl gap-5 bg-[#040404] border border-white/12 w-full max-w-[464px]">
+                <div
+                    class="flex relative bg-black rounded-lg z-0  w-full  h-full  max-h-[368px] min-h-[368px] min-w-auto sm:max-w-[428px] sm:min-w-[428px] overflow-hidden">
+
+                    <img src="./assets/img/main-purple-light-blur.png"
+                        class="absolute w-[820px] min-w-[620px] bottom-[-70px] left-[50%] translate-x-[-50%]" alt="" />
+                    <img src="./assets/img/main-white-light-blur.png"
+                        class="absolute w-[820px] min-w-[620px] bottom-[-100px] left-[50%] translate-x-[-50%] mix-blend-plus-lighter"
+                        alt="" />
+                    <img src="./assets/img/main-white-blur.png"
+                        class="absolute w-[820px] min-w-[620px] bottom-[-50px] left-[50%] translate-x-[-50%]" alt="" />
+                    <img src="./assets/img/dashboard-block-3-light.png"
+                        class="absolute w-[1020px] min-w-[1020px] bottom-[-400px] left-[50%] -z-20 translate-x-[-50%]"
+                        alt="" />
+                    <img src="./assets/img/getting-started-4-tumbler.png"
+                        class=" absolute left-[50%] translate-x-[-50%] top-[40%] translate-y-[-40%] min-w-[196px]"
+                        alt="">
+                    <div
+                        class="flex absolute bg-white rounded-[100px] px-3.5 py-2.5 left-[50%] translate-x-[-50%] top-[36px] min-w-[350px]">
+                        <span class="text-black tracking-[-0.04em]">
+                            You have successfully activated Arkeno mode
+                        </span>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2.5">
+                    <div class="flex gap-[9px] items-center">
+                        <div
+                            class="flex  w-[32px] h-[32px] items-center justify-center  bg-[#040404] rounded-[6px] customBorderDashboardNumber">
+                            <span class="text-white text-lg font-medium tracking-[-0.04em]"> 4</span>
+                        </div>
+                        <span class="text-white font-medium text-xl  tracking-[-0.04em]">
+                            Activate Arkemode
+                        </span>
+                    </div>
+                    <span class="text-white/30 leading-[150%] font-light tracking-[-0.04em] ">
+                        With one click, the user activates Arkemode. From this point on, all outgoing transactions are
+                        routed through Arkeno Core.
+                    </span>
+                </div>
+            </div>
+            <div
+                class="flex flex-col z-0 p-4.5 rounded-xl gap-5 bg-[#040404] border border-white/12 w-full max-w-[464px]">
+                <div
+                    class="flex relative bg-black rounded-lg w-full  h-full  max-h-[368px] min-h-[368px] min-w-auto sm:max-w-[428px] sm:min-w-[428px] overflow-hidden">
+
+                    <img src="./assets/img/getting-started-5.png" class="absolute top-[32px] left-[32px]" alt="">
+
+                </div>
+                <div class="flex flex-col gap-2.5">
+                    <div class="flex gap-[9px] items-center">
+                        <div
+                            class="flex  w-[32px] h-[32px] items-center justify-center  bg-[#040404] rounded-[6px] customBorderDashboardNumber">
+                            <span class="text-white text-lg font-medium tracking-[-0.04em]"> 5</span>
+                        </div>
+                        <span class="text-white font-medium text-xl  tracking-[-0.04em]">
+                            Continue Normal Use
+                        </span>
+                    </div>
+                    <span class="text-white/30 leading-[150%] font-light tracking-[-0.04em] ">
+                        User can continue using other dApps, DEXs, staking platforms, etc.
+                    </span>
+                </div>
+            </div>
+            <div
+                class="flex flex-col z-0 p-4.5 rounded-xl gap-5 bg-[#040404] border border-white/12 w-full max-w-[464px]">
+                <div
+                    class="flex relative bg-black rounded-lg w-full  h-full  max-h-[368px] min-h-[368px] min-w-auto sm:max-w-[428px] sm:min-w-[428px] overflow-hidden">
+
+                    <img src="./assets/img/getting-started-6.png" class="absolute top-[32px] left-[18px]" alt="">
+                </div>
+                <div class="flex flex-col gap-2.5">
+                    <div class="flex gap-[9px] items-center">
+                        <div
+                            class="flex  w-[32px] h-[32px] items-center justify-center  bg-[#040404] rounded-[6px] customBorderDashboardNumber">
+                            <span class="text-white text-lg font-medium tracking-[-0.04em]">6</span>
+                        </div>
+                        <span class="text-white font-medium text-xl  tracking-[-0.04em]">
+                            Monitor Performance
+                        </span>
+                    </div>
+                    <span class="text-white/30 leading-[150%] font-light tracking-[-0.04em] ">
+                        The dashboard provides detailed stats on: Execution times,
+                        Route comparison (normal vs Arkeno), Fee savings
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="flex flex-col mt-18 items-center w-full max-w-[1440px] gap-[52px]">
+        <div class="flex py-3 px-6 rounded-[100px] bg-primary-color/12">
+            <span class="text-primary-color font-medium text-[32px] tracking-[-0.04em] ">
+                Reviews
+            </span>
+        </div>
+        <div class="flex flex-wrap gap-4.5 w-full justify-center">
+            <div
+                class="flex flex-col bg-[#040404] justify-between min-h-[218px] p-5.5 rounded-xl border border-white/12 w-full max-w-[468px]">
+                <div class="flex justify-between items-center w-full">
+                    <div class="flex items-center gap-3">
+                        <img src="./assets/img/logo_1.png" alt="">
+                        <div class="flex flex-col">
+                            <span class="text-white text-lg leading-[125%] tracking-[-0.04em] ">
+                                @CryptoNomisd
+                            </span>
+                            <span class="text-[#A6A6A6] text-lg leading-[125%] tracking-[-0.04em] ">Early Power
+                                User</span>
+                        </div>
+                    </div>
+                    <div class="flex py-1.5 px-3 bg-primary-color/12 rounded-[4px] border border-black">
+                        <span class="text-lg text-primary-color leading-[125%] tracking-[-0.04em] ">
+                            Personal Result
+                        </span>
+                    </div>
+                </div>
+                <span class="text-white/25 font-light text-lg leading-[150%] tracking-[-0.04em]">
+                    Was testing Arkeno from day one. Speed is unreal — transactions hit in seconds, even when the
+                    network's jammed. It's now part of every trade I do.
+                </span>
+                <span class="text-white text-lg leading-[150%] tracking-[-0.04em]">
+                    Using since early beta (~2 months)
+                </span>
+            </div>
+
+            <div
+                class="flex flex-col bg-[#040404] justify-between min-h-[218px] p-5.5 rounded-xl border border-white/12 w-full max-w-[468px]">
+                <div class="flex justify-between items-center w-full">
+                    <div class="flex items-center gap-3">
+                        <img src="./assets/img/logo_2.png" alt="">
+                        <div class="flex flex-col">
+                            <span class="text-white text-lg leading-[125%] tracking-[-0.04em] ">
+                                @SolSapers
+                            </span>
+                            <span class="text-[#A6A6A6] text-lg leading-[125%] tracking-[-0.04em] ">Multi-Wallet
+                                Operator</span>
+                        </div>
+                    </div>
+                    <div class="flex py-1.5 px-3 bg-primary-color/12 rounded-[4px] border border-black">
+                        <span class="text-lg text-primary-color leading-[125%] tracking-[-0.04em] ">
+                            Trader Insight
+                        </span>
+                    </div>
+                </div>
+                <span class="text-white/25 font-light text-lg leading-[150%] tracking-[-0.04em]">
+                    Arkemode is always on for me. I route through 4 wallets and never touch settings. It just works —
+                    fast and clean.
+                </span>
+                <span class="text-white text-lg leading-[150%] tracking-[-0.04em]">
+                    Joined ~2 weeks ago
+                </span>
+            </div>
+
+            <div
+                class="flex flex-col bg-[#040404] justify-between min-h-[218px] p-5.5 rounded-xl border border-white/12 w-full max-w-[468px]">
+                <div class="flex justify-between items-center w-full">
+                    <div class="flex items-center gap-3">
+                        <img src="./assets/img/logo_3.png" alt="">
+                        <div class="flex flex-col">
+                            <span class="text-white text-lg leading-[125%] tracking-[-0.04em] ">
+                                @Degenqueenish
+                            </span>
+                            <span class="text-[#A6A6A6] text-lg leading-[125%] tracking-[-0.04em] ">Test Group
+                                Member</span>
+                        </div>
+                    </div>
+                    <div class="flex py-1.5 px-3 bg-primary-color/12 rounded-[4px] border border-black">
+                        <span class="text-lg text-primary-color leading-[125%] tracking-[-0.04em] ">
+                            Real Feedback
+                        </span>
+                    </div>
+                </div>
+                <span class="text-white/25 font-light text-lg leading-[150%] tracking-[-0.04em]">
+                    Didn't think a routing tool would change much… but I literally haven't had a stuck transaction since
+                    switching. Zero failures. Love that.
+                </span>
+                <span class="text-white text-lg leading-[150%] tracking-[-0.04em]">
+                    Using for ~ 1 month
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="roadmap" class="flex flex-col mt-18 items-center w-full max-w-[1440px] gap-[52px]">
+        <div class="flex py-3 px-6 rounded-[100px] bg-primary-color/12">
+            <span class="text-primary-color font-medium text-[32px] tracking-[-0.04em] ">
+                Roadmap
+            </span>
+        </div>
+        <div class="flex flex-wrap justify-center gap-3 w-full relative">
+            <div
+                class=" top-[30px] left-[55px] hidden 1440px:flex z-10 absolute h-[6px] min-h-[6px] max-h-[6px] w-[1050px] bg-gradient-to-b from-[#716CFF] to-[#5C0BCD]">
+            </div>
+            <div class="flex relative flex-col gap-3 p-1.5 bg-[#040404] rounded-xl w-full max-w-[363px]">
+                <div class="flex z-20">
+                    <div
+                        class="flex customBorderNumberRoadmap h-[54px] w-[54px] justify-center items-center bg-gradient-to-b from-[#716CFF] to-[#5C0BCD] rounded-2xl shadow-[inset_0_-2px_16px_rgba(255,255,255,0.48)]">
+                        <span class="font-medium text-2xl tracking-[-0.04em] text-white">
+                            1
+                        </span>
+                    </div>
+                </div>
+                <span class="text-white font-medium text-xl ">
+                    Q2 2025 — Core Launch
+                </span>
+                <ul class="flex flex-col gap-4">
+                    <li class="text-white/50  tracking-[-0.04em] font-light">Brand launch + website</li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">Twitter established: @ArkenoCore</li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">MVP routing engine completed</li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">Wallet connection & manual Arkemode
+                        activation</li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">
+                        Initial dashboard: wallets, status, activation
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex relative flex-col gap-3 p-1.5 bg-[#040404] rounded-xl w-full max-w-[342px]">
+
+                <div class="flex z-20">
+                    <div
+                        class="flex customBorderNumberRoadmap h-[54px] w-[54px] justify-center items-center bg-gradient-to-b from-[#716CFF] to-[#5C0BCD] rounded-2xl shadow-[inset_0_-2px_16px_rgba(255,255,255,0.48)]">
+                        <span class="font-medium text-2xl tracking-[-0.04em] text-white">
+                            2
+                        </span>
+                    </div>
+                </div>
+                <span class="text-white font-medium text-xl ">
+                    Q3 2025 — Public Alpha
+                </span>
+                <ul class="flex flex-col gap-4">
+                    <li class="text-white/50  tracking-[-0.04em] font-light">Public launch of Arkeno Core in alpha mode
+                    </li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">Onboarding of real users + feedback
+                        collection</li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">Telegram bot for transaction alerts &
+                        errors</li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">Extended dashboard analytics</li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">
+                        First version of customizable RPC profiles
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex relative flex-col gap-3 p-1.5 bg-[#040404] rounded-xl w-full max-w-[350px] ">
+                <div class="flex z-20">
+                    <div
+                        class="flex customBorderNumberRoadmap h-[54px] w-[54px] justify-center items-center bg-gradient-to-b from-[#716CFF] to-[#5C0BCD] rounded-2xl shadow-[inset_0_-2px_16px_rgba(255,255,255,0.48)]">
+                        <span class="font-medium text-2xl tracking-[-0.04em] text-white">
+                            3
+                        </span>
+                    </div>
+                </div>
+                <span class="text-white font-medium text-xl ">
+                    Q4 2025 — Infrastructure Layer
+                </span>
+                <ul class="flex flex-col gap-4">
+                    <li class="text-white/50  tracking-[-0.04em] font-light">Always-On Arkemode (auto-activation on
+                        login)</li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">dApp API access for external integrations
+                    </li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">Native support for staking and DEX routing
+                    </li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">Multi-user / DAO-compatible access</li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">
+                        Core routing layer optimization for scale
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex relative flex-col gap-3 p-1.5 bg-[#040404] rounded-xl w-full max-w-[344px]">
+                <div class="flex z-20">
+                    <div
+                        class="flex customBorderNumberRoadmap h-[54px] w-[54px] justify-center items-center bg-gradient-to-b from-[#716CFF] to-[#5C0BCD] rounded-2xl shadow-[inset_0_-2px_16px_rgba(255,255,255,0.48)]">
+                        <span class="font-medium text-2xl tracking-[-0.04em] text-white">
+                            4
+                        </span>
+                    </div>
+                </div>
+                <span class="text-white font-medium text-xl ">
+                    Q1 2026 — Network Scaling
+                </span>
+                <ul class="flex flex-col gap-4">
+                    <li class="text-white/50  tracking-[-0.04em] font-light">Full public launch of Arkeno Core</li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">Network-level optimization tracking</li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">dApp partnerships and deeper RPC
+                        integration</li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">Advanced analytics & performance reporting
+                    </li>
+                    <li class="text-white/50  tracking-[-0.04em] font-light">
+                        Developer dashboard & documentation
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="faq" class="flex flex-col mt-18 items-center w-full max-w-[1440px] gap-[52px]">
+        <div class="flex py-3 px-6 rounded-[100px] bg-primary-color/12">
+            <span class="text-primary-color font-medium text-[32px] tracking-[-0.04em] ">
+                FAQ
+            </span>
+        </div>
+        <div class="flex flex-col gap-4 w-full max-w-[768px]" id="faqList">
+            <div
+                class="faq-item flex flex-col p-6 bg-gradient-to-r justify-between w-full from-[#0D0D0D] to-[#000000] border border-white/12 rounded-xl cursor-pointer hover:border-white/20 transition-all duration-300">
+                <div class="flex items-center justify-between w-full">
+                    <div class="flex items-center gap-[8px] z-0">
+                        <div
+                            class="flex customBorderFaq items-center justify-center rounded-[6px] h-[28px] w-[28px] bg-gradient-to-b from-[#716CFF] to-[#5C0BCD]">
+                            <span class="text-white text-lg font-medium tracking-[-0.04em]">
+                                1
+                            </span>
+                        </div>
+                        <span class="text-white font-medium text-xl tracking-[-0.04em]">
+                            What is Arkeno?
+                        </span>
+                    </div>
+                    <svg class="faq-arrow transition-transform duration-300" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 10L12 15L7 10" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="flex w-full mt-3 mb-3 h-[1px] bg-white/12"></div>
+                    <span class="text-white/30 leading-[150%] tracking-[-0.04em] text-lg font-light">
+                        Arkeno is a web-based product that accelerates and stabilizes transactions on the Solana
+                        network. It acts as an internal routing layer through which all user transactions are processed
+                        after connecting a wallet and activating Arkemode.
+                    </span>
+                </div>
+            </div>
+
+            <div
+                class="faq-item flex flex-col p-6 bg-gradient-to-r justify-between w-full from-[#0D0D0D] to-[#000000] border border-white/12 rounded-xl cursor-pointer hover:border-white/20 transition-all duration-300">
+                <div class="flex items-center justify-between w-full">
+                    <div class="flex items-center gap-[8px] z-0">
+                        <div
+                            class="flex customBorderFaq items-center justify-center rounded-[6px] h-[28px] w-[28px] bg-gradient-to-b from-[#716CFF] to-[#5C0BCD]">
+                            <span class="text-white text-lg font-medium tracking-[-0.04em]">
+                                2
+                            </span>
+                        </div>
+                        <span class="text-white font-medium text-xl tracking-[-0.04em]">
+                            How does Arkemode work?
+                        </span>
+                    </div>
+                    <svg class="faq-arrow transition-transform duration-300" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 10L12 15L7 10" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="flex w-full mt-3 mb-3 h-[1px] bg-white/12"></div>
+                    <span class="text-white/30 leading-[150%] tracking-[-0.04em] text-lg font-light">
+                        Arkemode is a mode that routes your transactions through the Arkeno core system. It dynamically
+                        selects the most efficient network path, reduces fees, and speeds up execution. It is activated
+                        with one click and works in the background.
+                    </span>
+                </div>
+            </div>
+
+            <div
+                class="faq-item flex flex-col p-6 bg-gradient-to-r justify-between w-full from-[#0D0D0D] to-[#000000] border border-white/12 rounded-xl cursor-pointer hover:border-white/20 transition-all duration-300">
+                <div class="flex items-center justify-between w-full">
+                    <div class="flex items-center gap-[8px] z-0">
+                        <div
+                            class="flex customBorderFaq items-center justify-center rounded-[6px] h-[28px] w-[28px] bg-gradient-to-b from-[#716CFF] to-[#5C0BCD]">
+                            <span class="text-white text-lg font-medium tracking-[-0.04em]">
+                                3
+                            </span>
+                        </div>
+                        <span class="text-white font-medium text-xl tracking-[-0.04em]">
+                            Which wallets are supported?
+                        </span>
+                    </div>
+                    <svg class="faq-arrow transition-transform duration-300" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 10L12 15L7 10" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="flex w-full mt-3 mb-3 h-[1px] bg-white/12"></div>
+                    <span class="text-white/30 leading-[150%] tracking-[-0.04em] text-lg font-light">
+                        Users connect their wallets via private key. Any Solana-compatible wallet is supported,
+                        including Phantom, Backpack, and others. Multiple wallet addresses can be used simultaneously.
+                    </span>
+                </div>
+            </div>
+
+            <div
+                class="faq-item flex flex-col p-6 bg-gradient-to-r justify-between w-full from-[#0D0D0D] to-[#000000] border border-white/12 rounded-xl cursor-pointer hover:border-white/20 transition-all duration-300">
+                <div class="flex items-center justify-between w-full">
+                    <div class="flex items-center gap-[8px] z-0">
+                        <div
+                            class="flex customBorderFaq items-center justify-center rounded-[6px] h-[28px] w-[28px] bg-gradient-to-b from-[#716CFF] to-[#5C0BCD]">
+                            <span class="text-white text-lg font-medium tracking-[-0.04em]">
+                                4
+                            </span>
+                        </div>
+                        <span class="text-white font-medium text-xl tracking-[-0.04em]">
+                            What happens to my transactions after Arkemode is activated?
+                        </span>
+                    </div>
+                    <svg class="faq-arrow transition-transform duration-300" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 10L12 15L7 10" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="flex w-full mt-3 mb-3 h-[1px] bg-white/12"></div>
+                    <span class="text-white/30 leading-[150%] tracking-[-0.04em] text-lg font-light">
+                        All outgoing transactions are automatically routed through Arkeno’s infrastructure. This doesn’t
+                        change how you use dApps — you just get faster, more efficient transactions with no manual
+                        adjustments.
+                    </span>
+                </div>
+            </div>
+
+            <div
+                class="faq-item flex flex-col p-6 bg-gradient-to-r justify-between w-full from-[#0D0D0D] to-[#000000] border border-white/12 rounded-xl cursor-pointer hover:border-white/20 transition-all duration-300">
+                <div class="flex items-center justify-between w-full">
+                    <div class="flex items-center gap-[8px] z-0">
+                        <div
+                            class="flex customBorderFaq items-center justify-center rounded-[6px] h-[28px] w-[28px] bg-gradient-to-b from-[#716CFF] to-[#5C0BCD]">
+                            <span class="text-white text-lg font-medium tracking-[-0.04em]">
+                                5
+                            </span>
+                        </div>
+                        <span class="text-white font-medium text-xl tracking-[-0.04em]">
+                            Is this secure?
+                        </span>
+                    </div>
+                    <svg class="faq-arrow transition-transform duration-300" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 10L12 15L7 10" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="flex w-full mt-3 mb-3 h-[1px] bg-white/12"></div>
+                    <span class="text-white/30 leading-[150%] tracking-[-0.04em] text-lg font-light">
+                        Arkeno does not store or control any funds — it simply routes signed transactions through its
+                        infrastructure.
+                    </span>
+                </div>
+            </div>
+
+            <div
+                class="faq-item flex flex-col p-6 bg-gradient-to-r justify-between w-full from-[#0D0D0D] to-[#000000] border border-white/12 rounded-xl cursor-pointer hover:border-white/20 transition-all duration-300">
+                <div class="flex items-center justify-between w-full">
+                    <div class="flex items-center gap-[8px] z-0">
+                        <div
+                            class="flex customBorderFaq items-center justify-center rounded-[6px] h-[28px] w-[28px] bg-gradient-to-b from-[#716CFF] to-[#5C0BCD]">
+                            <span class="text-white text-lg font-medium tracking-[-0.04em]">
+                                6
+                            </span>
+                        </div>
+                        <span class="text-white font-medium text-xl tracking-[-0.04em]">
+                            Do I need to configure anything after connecting?
+                        </span>
+                    </div>
+                    <svg class="faq-arrow transition-transform duration-300" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 10L12 15L7 10" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <div class="flex w-full mt-3 mb-3 h-[1px] bg-white/12"></div>
+                    <span class="text-white/30 leading-[150%] tracking-[-0.04em] text-lg font-light">
+                        No. Once the wallet is connected, you only need to activate Arkemode. Everything else runs
+                        automatically in the background.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="flex flex-col lg:flex-row justify-between px-2.5 mt-18 mb-[83px] w-full bg-red max-w-[1440px]">
+        <div class="flex items-center gap-3">
+            <img src="./assets/img/logo.svg" alt="" />
+            <span class="text-white text-xl font-medium tracking-[-0.04em]">Arkeno</span>
+        </div>
+        <ul
+            class="flex flex-col lg:flex-row  gap-6 bg-none border-none lg:bg-[#0D0D0D]  rounded-lg lg:border border-white/4 py-3 px-4">
+            <li>
+                <a href="#video"
+                    class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">Video</a>
+            </li>
+            <li>
+                <a href="#dashboard"
+                    class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">Dashboard</a>
+            </li>
+            <li>
+                <a href="#getting-started"
+                    class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">Getting
+                    Started</a>
+            </li>
+            <li>
+                <a href="#reviews"
+                    class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">Reviews</a>
+            </li>
+            <li>
+                <a href="#faq"
+                    class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">FAQ</a>
+            </li>
+            <li>
+                <a href="#roadmap"
+                    class="text-white/30 text-lg tracking-[-0.04em] font-Roboto-flex hover:text-white/60 transition-colors duration-500 ease-in-out">Roadmap</a>
+            </li>
+        </ul>
+        <button onclick="window.location.href=config.url"
+            class="cursor-pointer w-max lg:w-auto hover:opacity-80 transition-opacity duration-500 ease-in-out flex py-2.5 px-4 gap-1 items-center bg-gradient-to-b from-[#716CFF] to-[#5C0BCD] rounded-[6px] customBorder">
+            <span class="text-white font-Roboto-flex text-xl tracking-[-0.04em]">Join us on X
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                <path
+                    d="M9.66488 17.6505C9.42513 17.8743 9.23958 18.0241 9.04996 18.1336C8.12175 18.6695 6.97816 18.6695 6.04996 18.1336C5.70791 17.9361 5.37912 17.6073 4.72153 16.9498C4.06394 16.2922 3.73514 15.9634 3.53767 15.6213C3.00177 14.6931 3.00177 13.5495 3.53767 12.6213C3.73514 12.2793 4.06394 11.9505 4.72153 11.2929L7.54996 8.46448C8.20755 7.80689 8.53634 7.47809 8.87838 7.28062C9.80659 6.74472 10.9502 6.74472 11.8784 7.28061C12.2204 7.47809 12.5492 7.80689 13.2068 8.46448C13.8644 9.12207 14.1932 9.45086 14.3907 9.7929C14.9266 10.7211 14.9266 11.8647 14.3907 12.7929C14.2812 12.9825 14.1314 13.1681 13.9075 13.4078M11.0919 10.5922C10.868 10.8319 10.7182 11.0175 10.6087 11.2071C10.0728 12.1353 10.0728 13.2789 10.6087 14.2071C10.8062 14.5492 11.135 14.878 11.7926 15.5355C12.4502 16.1931 12.779 16.5219 13.121 16.7194C14.0492 17.2553 15.1928 17.2553 16.121 16.7194C16.4631 16.5219 16.7919 16.1931 17.4495 15.5355L20.2779 12.7071C20.9355 12.0495 21.2643 11.7207 21.4617 11.3787C21.9976 10.4505 21.9976 9.30689 21.4617 8.37869C21.2643 8.03665 20.9355 7.70785 20.2779 7.05026C19.6203 6.39267 19.2915 6.06388 18.9495 5.8664C18.0212 5.3305 16.8777 5.3305 15.9495 5.8664C15.7598 5.97588 15.5743 6.12571 15.3345 6.34955"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+        </button>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/config.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/loader.js"></script>
+</body>
+
 </html>

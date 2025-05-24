@@ -7,8 +7,8 @@
 
 @theme {
   --color-primary-color: #716cfe;
-
   --font-Roboto-flex: "Roboto Flex", sans-serif;
+  --breakpoint-1440px: 1440px;
 }
 
 ::selection {
@@ -23,10 +23,104 @@
   background-color: #716cfe;
 }
 
+.loader {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  position: fixed;
+  display: flex;
+  transition: opacity 0.5s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  overflow: hidden;
+}
+
+.loader_image {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0 0 8px #716cfe);
+}
+
+/* Верхняя часть буквы А */
+.loader_image path:first-child {
+  animation: slideFromBottom 0.8s ease-out forwards;
+  transform-origin: center;
+}
+
+/* Нижняя часть буквы А */
+.loader_image path:last-child {
+  animation: slideFromTop 0.8s ease-out forwards;
+  transform-origin: center;
+}
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Пульсация после соединения */
+.loader_image {
+  animation: pulseAfterConnect 2s infinite ease-in-out;
+  animation-delay: 0.8s;
+}
+
+@keyframes pulseAfterConnect {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 8px #716cfe) brightness(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px #716cfe) brightness(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 8px #716cfe) brightness(1);
+  }
+}
+
+.loader.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .customBorder {
   position: relative;
   box-sizing: border-box;
 }
+
 .customBorder::before {
   content: "";
   z-index: -1;
@@ -41,16 +135,117 @@
 
 
 .fade-right {
-    position: relative;
-  }
-  
-  .fade-right::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
-    pointer-events: none;
-  }
+  position: relative;
+}
+
+.fade-right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
+
+.customBorderVideo {
+  position: relative;
+  z-index: 0;
+}
+
+.customBorderVideo::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  left: -1px;
+  bottom: -1px;
+  border-radius: 24px;
+  background: linear-gradient(to bottom, #716BFE 0%, black 100%);
+}
+
+.customBorderDashboardNumber {
+  position: relative;
+}
+
+.customBorderDashboardNumber::before {
+  position: absolute;
+  top: -1px;
+  content: "";
+  z-index: -1;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border-radius: 6px;
+  background: linear-gradient(to bottom, #070707 0%, #4F4F4F 100%);
+}
+
+.customBorderConnect::before {
+  position: absolute;
+  top: -1px;
+  content: "";
+  z-index: -1;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border-radius: 6px;
+  background: linear-gradient(to bottom, #736CFF 0%, #8B56DF 100%);
+}
+
+.customBorderNumberRoadmap {
+  position: relative;
+}
+
+.customBorderNumberRoadmap::before {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  content: "";
+  z-index: -1;
+  border-radius: 16px;
+  background: linear-gradient(to bottom, #9E9AFF 0%, #E8DDF9 100%);
+}
+
+.customBorderFaq {
+  position: relative;
+}
+
+.customBorderFaq::before {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  content: "";
+  z-index: -1;
+  border-radius: 6px;
+  background: linear-gradient(to bottom, #726AFF 0%, #8C55DC 100%);
+}
+
+.backdrop {
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #0a0a0a71;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.backdrop.active {
+  opacity: 1;
+}
+
+#mobileMenuContent.active {
+  right: 0;
+}
+
+.active>div>svg>path {
+  stroke-opacity: 1;
+}
